@@ -1,0 +1,23 @@
+From d20764eaca1029c61c79f0f3ed2c3823b0cb2e92 Mon Sep 17 00:00:00 2001
+From: Khem Raj <raj.khem@gmail.com>
+Date: Mon, 11 May 2020 07:59:01 -0700
+Subject: [PATCH] libstdc++-v3: Include system_error for std::errc
+
+Upstream-Status: Pending
+Signed-off-by: Khem Raj <raj.khem@gmail.com>
+---
+ libstdc++-v3/src/filesystem/ops.cc | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/libstdc++-v3/src/filesystem/ops.cc b/libstdc++-v3/src/filesystem/ops.cc
+index 29ea9c0ce87..f7291271f1e 100644
+--- a/libstdc++-v3/src/filesystem/ops.cc
++++ b/libstdc++-v3/src/filesystem/ops.cc
+@@ -33,6 +33,7 @@
+ #include <functional>
+ #include <ostream>
+ #include <stack>
++#include <system_error>
+ #include <ext/stdio_filebuf.h>
+ #include <stdlib.h>
+ #include <stdio.h>
